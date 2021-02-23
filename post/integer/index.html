@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Integer - But in python 2, they are mapped to c integers. - Rasivosa</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="The integer class wraps a value of the primitive type int in an object.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Rasivosa" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Rasivosa</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Integer - But in python 2, they are mapped to c integers.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://embed-fastly.wistia.com/deliveries/65c6868ab0018480df53b47c15c44605.webp?image_crop_resized=1280x720"><img alt="What Is An Integer Definition Examples Video Here&#039;s a mnemonic for remembering 2**31, subtract one to get the maximum integer value. what is an integer definition examples" src="https://embed-fastly.wistia.com/deliveries/65c6868ab0018480df53b47c15c44605.webp?image_crop_resized=1280x720" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP5vZlUPAV0YiJqrI_jCJbrFi87EfC9NTaQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Anbspnumbernbspwith no fractional part (no decimals). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>What Is An Integer Definition Examples Video </mark> An object of type integer contains a single field whose type is int.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.numerical.rl.ac.uk/lancelot/sif/img242.png"><img alt="3 2 3 Integer And Real Parameters But in python 2, they are mapped to c integers. numerical analysis group" src="http://www.numerical.rl.ac.uk/lancelot/sif/img242.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/GQ6fBrmfDikKA-3G-UbHZxQuBCUKHMpBitBu0vosqco6MDPFjnRI34fD7DmsRgcc8IRF_f_rIdyWq9U4DYqMCH2q81UnGBOJjTUorO8';"></a>
+		
+		<p style="text-align: center;"><b>422x644 - Anbspnumbernbspwith no fractional part (no decimals). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 422x644</li> 
+    <mark>3 2 3 Integer And Real Parameters </mark> In addition, this class provides several methods for converting.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.geogebra.org/resource/kG6NkFgc/AM3BZSPyjz2IXtS6/material-kG6NkFgc.png"><img alt="Integer Division Geogebra Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch). integer division geogebra" src="https://www.geogebra.org/resource/kG6NkFgc/AM3BZSPyjz2IXtS6/material-kG6NkFgc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt-NwFDjjC05guiBaM2_sGoYzV0DuTk09SIw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>658x475 - The integer class wraps a value of the primitive type int in an object. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 658x475</li> 
+    <mark>Integer Division Geogebra </mark> For example, 21, 4, 0, and −2048 are integers, while 9.75, 5+1/2, and √2 are not.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image01.ipracticemath.com/content/imageslm/integer/integers.png"><img alt="Learning Integers An integer (from the latin integer meaning whole) is colloquially defined as a number that can be written without a fractional component. learning integers" src="https://image01.ipracticemath.com/content/imageslm/integer/integers.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQeN0nkIveGBcbfZyAD796uIkEzEteAe_Suw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>491x171 - For example, 21, 4, 0, and −2048 are integers, while 9.75, 5+1/2, and √2 are not. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 491x171</li> 
+    <mark>Learning Integers </mark> Python has arbitrary precision integers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://files.realpython.com/media/Python-Basics-Chapter-Numbers-in-Python_Watermarked.f90ea9a4afd7.jpg"><img alt="Numbers In Python Real Python An integer (from the latin integer meaning whole) is colloquially defined as a number that can be written without a fractional component. numbers in python real python" src="https://files.realpython.com/media/Python-Basics-Chapter-Numbers-in-Python_Watermarked.f90ea9a4afd7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxsaRYFKuyo2TMfpWYntAGtou6tha_-FmkA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - Anbspnumbernbspwith no fractional part (no decimals). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>Numbers In Python Real Python </mark> In addition, this class provides several methods for converting.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://k8schoollessons.com/wp-content/uploads/2019/06/Adding-Subtracting-Integers-1.jpg"><img alt="Adding And Subtracting Integers Rules Pre Algebra Add Subtract Integers An integer (from the latin integer meaning whole) is colloquially defined as a number that can be written without a fractional component. adding and subtracting integers rules" src="https://k8schoollessons.com/wp-content/uploads/2019/06/Adding-Subtracting-Integers-1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaF88jXFT8D0DFSa0CvaNz3qC64jKLMsVHew&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>600x600 - Python has arbitrary precision integers. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x600</li> 
+    <mark>Adding And Subtracting Integers Rules Pre Algebra Add Subtract Integers </mark> But in python 2, they are mapped to c integers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/08/integers.png"><img alt="Integer Codrops Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch). integer codrops" src="https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/08/integers.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZ-j6i4mzG5ak1GhdlUf2dZWaHn5NYvAYAw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>814x200 - Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 814x200</li> 
+    <mark>Integer Codrops </mark> Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.geogebra.org/resource/NSVftBjk/pR88CyuSPYnLtNnm/material-NSVftBjk.png"><img alt="Visualizing Integer Addition On The Number Line Geogebra Related to english thack and thwack. visualizing integer addition on the" src="https://www.geogebra.org/resource/NSVftBjk/pR88CyuSPYnLtNnm/material-NSVftBjk.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6spwrS1yDGIBxh7rig5uCmSwXxbexu-eJQw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>996x356 - An object of type integer contains a single field whose type is int. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 996x356</li> 
+    <mark>Visualizing Integer Addition On The Number Line Geogebra </mark> Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/474x/cb/6b/f1/cb6bf15da7eac4b03374f7b40354a422.jpg"><img alt="Integer Operations Poster Mathpractice Studying Math Education Math Math Prep Python has arbitrary precision integers. integer operations poster mathpractice" src="https://i.pinimg.com/474x/cb/6b/f1/cb6bf15da7eac4b03374f7b40354a422.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVv2R_6I_093unJjHwZLt4t9tWqvSeHR3iQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>247x350 - Here&#039;s a mnemonic for remembering 2**31, subtract one to get the maximum integer value. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 247x350</li> 
+    <mark>Integer Operations Poster Mathpractice Studying Math Education Math Math Prep </mark> Here&#039;s a mnemonic for remembering 2**31, subtract one to get the maximum integer value.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/IP_polytope_with_LP_relaxation.svg/1200px-IP_polytope_with_LP_relaxation.svg.png"><img alt="Integer Points In Convex Polyhedra Wikipedia An object of type integer contains a single field whose type is int. integer points in convex polyhedra" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/IP_polytope_with_LP_relaxation.svg/1200px-IP_polytope_with_LP_relaxation.svg.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRevrHRXCa16E4TTrFFFD_HR838_IuO02UDCQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x996 - The integer class wraps a value of the primitive type int in an object. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x996</li> 
+    <mark>Integer Points In Convex Polyhedra Wikipedia </mark> Anbspnumbernbspwith no fractional part (no decimals).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.tutors.com/assets/images/courses/math/tutors-non-integer-examples.jpg"><img alt="What Is An Integer Definition Examples Video Python has arbitrary precision integers. what is an integer definition examples" src="https://cdn.tutors.com/assets/images/courses/math/tutors-non-integer-examples.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oKAFd1AWIpUbvItfuhUGnXZALn8RACPzIw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1422x800 - But in python 2, they are mapped to c integers. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1422x800</li> 
+    <mark>What Is An Integer Definition Examples Video </mark> For example, 21, 4, 0, and −2048 are integers, while 9.75, 5+1/2, and √2 are not.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.allaboutcircuits.com/uploads/articles/VHDL_Integer_1.jpg"><img alt="Integer And Its Subtypes In Vhdl Technical Articles An integer (from the latin integer meaning whole) is colloquially defined as a number that can be written without a fractional component. integer and its subtypes in vhdl" src="https://www.allaboutcircuits.com/uploads/articles/VHDL_Integer_1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR60u5IfCHhILd3jHKFGT9TdHp05sNQHE1m_g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>666x481 - An object of type integer contains a single field whose type is int. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 666x481</li> 
+    <mark>Integer And Its Subtypes In Vhdl Technical Articles </mark> Here&#039;s a mnemonic for remembering 2**31, subtract one to get the maximum integer value.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/kK089.png"><img alt="Integer Types With Defined Width Stack Overflow Anbspnumbernbspwith no fractional part (no decimals). integer types with defined width" src="https://i.stack.imgur.com/kK089.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Rgj2_fqYGJ39WdmBzNdR9vfmpwtXY0vPfA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1497x769 - But in python 2, they are mapped to c integers. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1497x769</li> 
+    <mark>Integer Types With Defined Width Stack Overflow </mark> An object of type integer contains a single field whose type is int.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/R9MuFLGOJro/maxresdefault.jpg"><img alt="Signed Integers Youtube In addition, this class provides several methods for converting. signed integers" src="https://i.ytimg.com/vi/R9MuFLGOJro/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_kue3wlA88dW_Ntq7g-YZZ5PoJpXqnHCxQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Related to english thack and thwack. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Signed Integers Youtube </mark> But in python 2, they are mapped to c integers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/integer_3.png"><img alt="What Is An Integer Theschoolrun An integer (from the latin integer meaning whole) is colloquially defined as a number that can be written without a fractional component. what is an integer theschoolrun" src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/integer_3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qCUxw_tw8eCiw28OUpyW54DOw95ZlKHmKg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>642x502 - An object of type integer contains a single field whose type is int. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 642x502</li> 
+    <mark>What Is An Integer Theschoolrun </mark> Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.math-only-math.com/images/subtraction-of-integers.png"><img alt="Subtraction Of Integers Subtracting Integers On A Number Line An object of type integer contains a single field whose type is int. subtracting integers on a number line" src="https://www.math-only-math.com/images/subtraction-of-integers.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQf9du3XGxprmALHDa70Ei1epOBtjee_IOMQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>813x382 - The integer class wraps a value of the primitive type int in an object. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 813x382</li> 
+    <mark>Subtraction Of Integers Subtracting Integers On A Number Line </mark> But in python 2, they are mapped to c integers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://2.bp.blogspot.com/-5fO8-fzzitU/W3SJOryp8wI/AAAAAAAAMUU/ebnpq9JHNhwj_evq0EJ1KOAFgsSLs5nxACLcBGAs/s1600/integer-addition-and-subtraction-visuals-math-word-wall.png"><img alt="Scaffolded Math And Science Integer Rules Visual References For Addition And Subtraction Python has arbitrary precision integers. integer rules visual references" src="https://2.bp.blogspot.com/-5fO8-fzzitU/W3SJOryp8wI/AAAAAAAAMUU/ebnpq9JHNhwj_evq0EJ1KOAFgsSLs5nxACLcBGAs/s1600/integer-addition-and-subtraction-visuals-math-word-wall.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpV9IO46fMquCTbywszs0U8djkxScfFkq3Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>940x493 - For example, 21, 4, 0, and −2048 are integers, while 9.75, 5+1/2, and √2 are not. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 940x493</li> 
+    <mark>Scaffolded Math And Science Integer Rules Visual References For Addition And Subtraction </mark> But in python 2, they are mapped to c integers.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://os.inf.tu-dresden.de/L3/refman/img9.gif"><img alt="Einfache Datentypen Python has arbitrary precision integers. os inf tu dresden de" src="http://os.inf.tu-dresden.de/L3/refman/img9.gif" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/o8JUAOJxgq5tSISpI_1QkwyHz3rzjfxYVDxtLDJHKq6WShMDzp6nRK_MoBkWoE-8mwamEQu1PctsSFCqbfAqL5F_KXFWKA';"></a>
+		
+		<p style="text-align: center;"><b>387x469 - Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 387x469</li> 
+    <mark>Einfache Datentypen </mark> In addition, this class provides several methods for converting.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.racket-lang.org/ts-reference/pict.png"><img alt="1 Type Reference The integer class wraps a value of the primitive type int in an object. 1 type reference" src="https://docs.racket-lang.org/ts-reference/pict.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSytCTUXzxbrr3_fWFHipUdPTNkoandZ_yKcw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1136x850 - In addition, this class provides several methods for converting. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1136x850</li> 
+    <mark>1 Type Reference </mark> For example, 21, 4, 0, and −2048 are integers, while 9.75, 5+1/2, and √2 are not.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.amathsdictionaryforkids.com/qr/iimages/integer2.gif"><img alt="Integer A Maths Dictionary For Kids Quick Reference By Jenny Eather Borrowed from latin integer (untouched, unhurt, unchanged, sound, fresh, whole, entire, pure, honest), from in + tangere (to touch). a maths dictionary for kids" src="http://www.amathsdictionaryforkids.com/qr/iimages/integer2.gif" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/r65Vk7N_KHUIFdS5yVgVyzPMyOxX0n4G51dfyISqUiKNZnsnS_GCs-vKCU2B4yEAhfeUn4hdKyT7aGHI1vsdDwb-pSY5JKVOPNamIiT7PbZxOnjZd1I';"></a>
+		
+		<p style="text-align: center;"><b>600x960 - Anbspnumbernbspwith no fractional part (no decimals). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x960</li> 
+    <mark>Integer A Maths Dictionary For Kids Quick Reference By Jenny Eather </mark> In addition, this class provides several methods for converting.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://rasivosa.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/album-de-djadja-dinaz/">Album De Djadja Dinaz : Planete rap 2018 vol.2 cd1.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/beatport-png/">Beatport Png - Update this logo / details.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/danga-maari-oodhari-lyrics-translation/">Danga Maari Oodhari Lyrics Translation - Danga maari oodhari puttukina nee naari.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/dhal-gaya-din-ho-gayi-shaam-lyrics-in-hindi/">Dhal Gaya Din Ho Gayi Shaam Lyrics In Hindi : D g d aesi hi thi barsaaaaaat a khud se judaa aur jag se paraye.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/lenny-alexia-m-roumbaba/">Lenny Alexia M&amp;#039;roumbaba - Soprano, de son vrai nom saïd m&amp;#039;roumbaba, est mariée depuis près de 12 ans à alexia, une jeune femme d&amp;#039;origines italiennes et espagnoles, qu&amp;#039;il a suivront deux autres enfants :</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/spongebob-squarepants-doodlebob-episode/">Spongebob Squarepants Doodlebob Episode - It could be because mr.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/the-hamilton-movie-free/">The Hamilton Movie Free - The real life of one of americas foremost founding fathers and first secretary of the treasury, alexander hamilton.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/danga-maari-oodhari-song/">Danga Maari Oodhari Song : Watch the full song video of danga maari oodhaari from anegan starring dhanush.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/dil-ibadat-kar-raha-hai-dhadkane-meri-sun-instrumental-ringtone/">Dil Ibadat Kar Raha Hai Dhadkane Meri Sun Instrumental Ringtone - Dil ibaadat kar raha hai dhadkanain meri sun tum mile.mp3.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/dj-lucas/">Dj Lucas / Over one million legal mp3 tracks available at juno download.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Rasivosa.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
